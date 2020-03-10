@@ -18,7 +18,7 @@ class Config(object):
     
     # AWS RDS MySQL
     # format: (user):(password)@(db_identifier).amazonaws.com:3306/(db_name)
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://appseed:appseed00@appseed.cvbepwqpmuk3.sa-east-1.rds.amazonaws.com:3306'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://appseed:appseed00@appseed.cvbepwqpmuk3.sa-east-1.rds.amazonaws.com:3306/appseedDB'
 
     # For 'in memory' database, please use:
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
