@@ -18,8 +18,8 @@ try:
 except KeyError:
     exit('Error: Invalid APPSEED_CONFIG_MODE environment variable entry.')
 
-app = create_app(config_mode) 
-Migrate(app, db)
+application = create_app(config_mode) 
+Migrate(application, db)
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
