@@ -16,8 +16,8 @@ class User(db.Model, UserMixin):
     __tablename__ = 'User'
 
     id = Column(Integer, primary_key=True)
-    username = Column(String, unique=True)
-    email = Column(String, unique=True)
+    username = Column(String(25), unique=True)
+    email = Column(String(90), unique=True)
     password = Column(Binary)
 
     def __init__(self, **kwargs):
